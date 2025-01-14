@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.fragment.app.FragmentContainerView android:name="com.northstar.gratitude.challenge_new.presentation.eleven_days.Challenge11DaysBannerFragment" android:id="@id/mystery_timer_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/title_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/mystery_timer_container">
+        <TextView android:textSize="24.0sp" android:textColor="?blackColor" android:gravity="center_horizontal" android:id="@id/headerTitleTv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/my_journal" android:fontFamily="@font/lato_bold" android:textAlignment="center" android:layout_marginStart="72.0dip" android:layout_marginEnd="72.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/iv_backup_off" android:padding="8.0dip" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintBottom_toBottomOf="@id/headerTitleTv" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/headerTitleTv" app:srcCompat="@drawable/ic_backup_alert" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

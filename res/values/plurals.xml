@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="affn_listen_settings_loop_update_message">
+        <item quantity="other">Your folder will now repeat %d times</item>
+        <item quantity="one">Your folder will now repeat %d time</item>
+    </plurals>
+    <plurals name="affn_listen_settings_pause_update_message">
+        <item quantity="other">Pause between affirmations set to %d secs</item>
+        <item quantity="one">Pause between affirmations set to %d sec</item>
+    </plurals>
+    <plurals name="gift_sub_buy_success_view_title">
+        <item quantity="other">%d subscriptions purchased successfully!</item>
+        <item quantity="one">%d subscription purchased successfully!</item>
+    </plurals>
+    <plurals name="gift_sub_share_view_footer">
+        <item quantity="other">%d subscriptions left</item>
+        <item quantity="one">%d subscriptions left</item>
+    </plurals>
+    <plurals name="journal_tab_search_hint">
+        <item quantity="other">Search in %d entries</item>
+        <item quantity="one">Search in %d entry</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+    </plurals>
+    <plurals name="pro_thanksgiving2023_offer_validity">
+        <item quantity="other">ENDS IN %d DAYS</item>
+        <item quantity="one">ENDS IN %d DAY</item>
+    </plurals>
+    <plurals name="steaks_calendar_streak_count">
+        <item quantity="other">%d days</item>
+        <item quantity="one">%d day</item>
+    </plurals>
+    <plurals name="steaks_share_stats_current_streak_count">
+        <item quantity="other">%d days</item>
+        <item quantity="one">%d day</item>
+    </plurals>
+    <plurals name="streak_progress_screen_day_streaks">
+        <item quantity="other">days streak!</item>
+        <item quantity="one">day streak!</item>
+    </plurals>
+    <plurals name="streak_share_count">
+        <item quantity="other">days</item>
+        <item quantity="one">day</item>
+    </plurals>
+    <plurals name="vb_home_photos_count">
+        <item quantity="other">%d Photos</item>
+        <item quantity="one">1 Photo</item>
+    </plurals>
+    <plurals name="vb_home_play_count">
+        <item quantity="other">Played %d times</item>
+        <item quantity="one">Played 1 time</item>
+    </plurals>
+    <plurals name="vb_movie_pause_update_message">
+        <item quantity="other">Pause between photos set to %d seconds.</item>
+        <item quantity="one">Pause between photos set to %d second.</item>
+    </plurals>
+    <plurals name="weekly_review_mood_times">
+        <item quantity="other">%1$s times</item>
+        <item quantity="one">1 time</item>
+    </plurals>
+    <plurals name="wrapped_screen_challenge_subtitle">
+        <item quantity="other">challenges</item>
+        <item quantity="one">challenge</item>
+    </plurals>
+    <plurals name="wrapped_screen_challenge_subtitle_share">
+        <item quantity="other">Gratitude challenges</item>
+        <item quantity="one">Gratitude challenge</item>
+    </plurals>
+</resources>

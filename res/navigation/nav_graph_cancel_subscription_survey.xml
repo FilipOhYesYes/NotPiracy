@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_cancel_subscription_survey" app:startDestination="@id/cancelSubscriptionSurveyFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="fragment_cancel_subscription_survey" android:name="com.northstar.gratitude.pro.afterUpgrade.presentation.cancel.CancelSubscriptionSurveyFragment" android:id="@id/cancelSubscriptionSurveyFragment">
+        <action android:id="@id/action_cancelSubscriptionSurveyFragment_to_cancelSubscriptionSurveyAnswerFragment" app:destination="@id/cancelSubscriptionSurveyAnswerFragment" />
+        <action android:id="@id/action_cancelSubscriptionSurveyFragment_to_cancelSubscriptionSurveyAnswerPricingFragment" app:destination="@id/cancelSubscriptionSurveyAnswerPricingFragment" />
+    </fragment>
+    <fragment android:label="fragment_cancel_subscription_survey_answer" android:name="com.northstar.gratitude.pro.afterUpgrade.presentation.cancel.CancelSubscriptionSurveyAnswerFragment" android:id="@id/cancelSubscriptionSurveyAnswerFragment">
+        <argument android:name="cancelReason" app:argType="string" />
+        <argument android:name="cancelQuestion" app:argType="string" />
+    </fragment>
+    <fragment android:label="fragment_cancel_subscription_survey_answer_pricing" android:name="com.northstar.gratitude.pro.afterUpgrade.presentation.cancel.CancelSubscriptionSurveyAnswerPricingFragment" android:id="@id/cancelSubscriptionSurveyAnswerPricingFragment" />
+</navigation>

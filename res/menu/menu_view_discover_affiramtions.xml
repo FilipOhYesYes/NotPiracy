@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_m3_create_new_folder" android:id="@id/action_add_to_folder" android:title="Add To Folder" app:iconTint="@color/white" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_m3_share" android:id="@id/action_share" android:title="Share" app:iconTint="@color/white" app:showAsAction="ifRoom" />
+</menu>

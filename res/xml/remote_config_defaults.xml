@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>share_app_text</key>
+        <value>Gratitude is a Simple, Personal and Private Journal. I use it and simply love writing
+            my grateful thoughts. Check it out.
+            \nhttps://play.google.com/store/apps/details?id=com.northstar.gratitude </value>
+    </entry>
+    <entry>
+        <key>rate_app_streak_count</key>
+        <value>7</value>
+    </entry>
+    <entry>
+        <key>paypal_link</key>
+        <value>https://paypal.me/priteshsankhe/</value>
+    </entry>
+    <entry>
+        <key>paypal_condition_streaks</key>
+        <value>30</value>
+    </entry>
+    <entry>
+        <key>force_update_android_version_code</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>exp_android_zero_case</key>
+        <value>zero.case.2</value>
+    </entry>
+    <entry>
+        <key>show_banner</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>banner_message</key>
+        <value>🎁Use code IAMGRATEFUL or click here and get free 1 month when you subscribe to any
+            Pro Plan.</value>
+    </entry>
+    <entry>
+        <key>banner_streak</key>
+        <value>7</value>
+    </entry>
+    <entry>
+        <key>show_free_trial_india</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>challenge_takers</key>
+        <value>133712</value>
+    </entry>
+    <entry>
+        <key>show_dailyzen_after_app_launch</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>show_dailyzen_exp_mod_value</key>
+        <value>4</value>
+    </entry>
+    <entry>
+        <key>in_app_updates_days_before_flexible</key>
+        <value>4</value>
+    </entry>
+    <entry>
+        <key>in_app_updates_days_before_force</key>
+        <value>30</value>
+    </entry>
+    <entry>
+        <key>journal_help_me_out_mod_value</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>journal_help_me_out_text</key>
+        <value>SHOW PROMPTS</value>
+    </entry>
+    <entry>
+        <key>show_journal_live_session_sheet</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>journal_multiple_images_value</key>
+        <value>multiple</value>
+    </entry>
+    <entry>
+        <key>backup_trigger_seen_days</key>
+        <value>2</value>
+    </entry>
+    <entry>
+        <key>show_invite_friends_dz_card</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>challenge_journal_footer_content</key>
+        <value>{
+            "is_experimenting": false,
+            "title": "Take the next step",
+            "subtitle": "Move forward in your gratitude journey with 7-day guided challenge.",
+            "cta": "View Challenge →"
+            }</value>
+    </entry>
+    <entry>
+        <key>challenge_item_view_ui</key>
+        <value>{"is_experimenting" : true, "applied_ui_type" : "collapsable"}</value>
+    </entry>
+    <entry>
+        <key>show_pro_after_ftue_android_india</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>show_pro_after_ftue_android_for_version</key>
+        <value>{"shouldShow" : false, "versionCode" : 1054}</value>
+    </entry>
+    <entry>
+        <key>show_rewind_2022</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>zero_case_challenge_card_mod_value</key>
+        <value>20</value>
+    </entry>
+    <entry>
+        <key>pexels_api_key_android</key>
+        <value>SPQrg9U0aSuSaMc2g3JQcFGG14DR8iK52gyeZ9aJevOSASTrLP6b4bcR</value>
+    </entry>
+    <entry>
+        <key>show_gift_subscription_ios_unavailable_banner</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>use_timezone_field_for_dates_android</key>
+        <value>true</value>
+    </entry>
+</defaultsMap>

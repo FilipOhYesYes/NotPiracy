@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="?colorOnSurfaceInverse" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:background="?colorOnSurfaceInverse" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_scrollEffect="compress" app:layout_scrollFlags="scroll|enterAlways|snap" app:navigationIcon="@drawable/m3_arrow_back" app:navigationIconTint="?colorOnSurfaceVariant" app:title="@string/manage_subscription_toolbar_title" app:titleTextColor="?colorOnSurface" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.constraintlayout.widget.ConstraintLayout android:background="?colorSurface" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/layout_pro_details" layout="@layout/layout_pro_details_razorpay" />
+            <include android:id="@id/layout_pro_benefits" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:layout_constraintTop_toBottomOf="@id/layout_pro_details" layout="@layout/layout_pro_benefits_list" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

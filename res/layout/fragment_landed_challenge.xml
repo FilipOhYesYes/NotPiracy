@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/landedChallengeMainContainer" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:textColor="#ff33277c" android:id="@id/selectedChallengeBtn" android:background="@drawable/shape_rounded_corner_fragment_landed_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginRight="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_16dp" android:text="@string/selectedChallenge" app:layout_constraintBottom_toTopOf="@id/challengeAlertTitle" />
+    <TextView android:textSize="@dimen/dimen_16sp" android:textColor="@color/gratitude_white" android:gravity="center" android:id="@id/challengeAlertTitle" android:background="@color/red_shade" android:padding="@dimen/dimen_16dp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="@font/lato" app:layout_constraintBottom_toBottomOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/challengeInstructionsRv" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="8.0dip" app:layout_constraintBottom_toTopOf="@id/selectedChallengeBtn" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

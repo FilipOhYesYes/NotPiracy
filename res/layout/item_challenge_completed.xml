@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" app:cardBackgroundColor="?colorSurface" app:cardCornerRadius="12.0dip" app:strokeColor="?colorOutlineVariant" app:strokeWidth="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?textAppearanceTitleMedium" android:textColor="?colorOnSurface" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:text="@string/challenges_list_completed_title" app:layout_constraintTop_toTopOf="parent" />
+        <com.google.android.material.divider.MaterialDivider android:id="@id/header_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" app:dividerColor="?colorOutlineVariant" app:layout_constraintTop_toBottomOf="@id/tv_title" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_challenges_completed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:nestedScrollingEnabled="false" app:layout_constraintTop_toBottomOf="@id/header_divider" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

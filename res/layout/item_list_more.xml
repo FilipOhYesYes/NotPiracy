@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/moreItemContainer" android:background="?whiteColor" android:paddingLeft="@dimen/dimen_16dp" android:paddingRight="@dimen/dimen_16dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_16dp" android:paddingEnd="@dimen/dimen_16dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/moreIv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/dimen_16sp" android:textColor="?blackColor" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/moreTv" android:padding="@dimen/dimen_16dp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="4" android:layout_weight="1.0" android:lineSpacingMultiplier="1.2" android:fontFamily="@font/lato" />
+    <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center_vertical" android:id="@id/moreSv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

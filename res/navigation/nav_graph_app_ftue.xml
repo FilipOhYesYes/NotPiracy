@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_app_ftue" app:startDestination="@id/ftueHomeFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="FtueHomeFragment" android:name="com.northstar.gratitude.ftueNew.presentation.FtueHomeFragment" android:id="@id/ftueHomeFragment">
+        <action android:id="@id/action_ftueHomeFragment_to_ftueJournalFragment" app:destination="@id/ftueJournalFragment" app:enterAnim="@anim/anim_ftue_enter_anim" app:exitAnim="@anim/anim_ftue_exit_anim" app:popEnterAnim="@anim/anim_ftue_enter_anim" app:popExitAnim="@anim/anim_ftue_exit_anim" />
+    </fragment>
+    <fragment android:label="FtueJournalFragment" android:name="com.northstar.gratitude.ftueNew.presentation.FtueJournalFragment" android:id="@id/ftueJournalFragment">
+        <action android:id="@id/action_ftueJournalFragment_to_ftueAffirmationsFragment" app:destination="@id/ftueAffirmationsFragment" app:enterAnim="@anim/anim_ftue_enter_anim" app:exitAnim="@anim/anim_ftue_exit_anim" app:popEnterAnim="@anim/anim_ftue_enter_anim" app:popExitAnim="@anim/anim_ftue_exit_anim" />
+        <action android:id="@id/action_ftueJournalFragment_to_ftueBuildProfileFragment" app:destination="@id/ftueBuildProfileFragment" app:enterAnim="@anim/anim_ftue_enter_anim" app:exitAnim="@anim/anim_ftue_exit_anim" app:popEnterAnim="@anim/anim_ftue_enter_anim" app:popExitAnim="@anim/anim_ftue_exit_anim" />
+    </fragment>
+    <fragment android:label="FtueAffirmationsFragment" android:name="com.northstar.gratitude.ftueNew.presentation.FtueAffirmationsFragment" android:id="@id/ftueAffirmationsFragment">
+        <action android:id="@id/action_ftueAffirmationsFragment_to_ftueVisionBoardFragment" app:destination="@id/ftueVisionBoardFragment" app:enterAnim="@anim/anim_ftue_enter_anim" app:exitAnim="@anim/anim_ftue_exit_anim" app:popEnterAnim="@anim/anim_ftue_enter_anim" app:popExitAnim="@anim/anim_ftue_exit_anim" />
+        <action android:id="@id/action_ftueAffirmationsFragment_to_ftueBuildProfileFragment" app:destination="@id/ftueBuildProfileFragment" app:enterAnim="@anim/anim_ftue_enter_anim" app:exitAnim="@anim/anim_ftue_exit_anim" app:popEnterAnim="@anim/anim_ftue_enter_anim" app:popExitAnim="@anim/anim_ftue_exit_anim" />
+    </fragment>
+    <fragment android:label="FtueVisionBoardFragment" android:name="com.northstar.gratitude.ftueNew.presentation.FtueVisionBoardFragment" android:id="@id/ftueVisionBoardFragment">
+        <action android:id="@id/action_ftueVisionBoardFragment_to_ftueDailyZenFragment" app:destination="@id/ftueDailyZenFragment" app:enterAnim="@anim/anim_ftue_enter_anim" app:exitAnim="@anim/anim_ftue_exit_anim" app:popEnterAnim="@anim/anim_ftue_enter_anim" app:popExitAnim="@anim/anim_ftue_exit_anim" />
+        <action android:id="@id/action_ftueVisionBoardFragment_to_ftueBuildProfileFragment" app:destination="@id/ftueBuildProfileFragment" app:enterAnim="@anim/anim_ftue_enter_anim" app:exitAnim="@anim/anim_ftue_exit_anim" app:popEnterAnim="@anim/anim_ftue_enter_anim" app:popExitAnim="@anim/anim_ftue_exit_anim" />
+    </fragment>
+    <fragment android:label="FtueDailyZenFragment" android:name="com.northstar.gratitude.ftueNew.presentation.FtueDailyZenFragment" android:id="@id/ftueDailyZenFragment">
+        <action android:id="@id/action_ftueDailyZenFragment_to_ftueBuildProfileFragment" app:destination="@id/ftueBuildProfileFragment" app:enterAnim="@anim/anim_ftue_enter_anim" app:exitAnim="@anim/anim_ftue_exit_anim" app:popEnterAnim="@anim/anim_ftue_enter_anim" app:popExitAnim="@anim/anim_ftue_exit_anim" />
+        <action android:id="@id/action_ftueDailyZenFragment_to_ftueBuildProfileFragment2" app:destination="@id/ftueBuildProfileFragment" app:enterAnim="@anim/anim_ftue_enter_anim" app:exitAnim="@anim/anim_ftue_exit_anim" app:popEnterAnim="@anim/anim_ftue_enter_anim" app:popExitAnim="@anim/anim_ftue_exit_anim" />
+    </fragment>
+    <fragment android:label="FtueBuildProfileFragment" android:name="com.northstar.gratitude.ftueNew.presentation.FtueBuildProfileFragment" android:id="@id/ftueBuildProfileFragment">
+        <action android:id="@id/action_ftueBuildProfileFragment_to_ftueChoosePlanFragment" app:destination="@id/ftueChoosePlanFragment" app:enterAnim="@anim/anim_ftue_enter_anim" app:exitAnim="@anim/anim_ftue_exit_anim" app:popEnterAnim="@anim/anim_ftue_enter_anim" app:popExitAnim="@anim/anim_ftue_exit_anim" />
+    </fragment>
+    <fragment android:label="FtueChoosePlanFragment" android:name="com.northstar.gratitude.ftueNew.presentation.FtueChoosePlanFragment" android:id="@id/ftueChoosePlanFragment">
+        <action android:id="@id/action_ftueChoosePlanFragment_to_ftuePlanPreparingFragment" app:destination="@id/ftuePlanPreparingFragment" app:enterAnim="@anim/anim_ftue_enter_anim" app:exitAnim="@anim/anim_ftue_exit_anim" app:popEnterAnim="@anim/anim_ftue_enter_anim" app:popExitAnim="@anim/anim_ftue_exit_anim" />
+    </fragment>
+    <fragment android:label="FtuePlanPreparingFragment" android:name="com.northstar.gratitude.ftueNew.presentation.FtuePlanPreparingFragment" android:id="@id/ftuePlanPreparingFragment">
+        <action android:id="@id/action_ftuePlanPreparingFragment_to_ftuePlanReadyFragment" app:destination="@id/ftuePlanReadyFragment" app:enterAnim="@anim/anim_ftue_enter_anim" app:exitAnim="@anim/anim_ftue_exit_anim" app:popEnterAnim="@anim/anim_ftue_enter_anim" app:popExitAnim="@anim/anim_ftue_exit_anim" app:popUpTo="@id/ftuePlanPreparingFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="FtuePlanReadyFragment" android:name="com.northstar.gratitude.ftueNew.presentation.FtuePlanReadyFragment" android:id="@id/ftuePlanReadyFragment" />
+</navigation>

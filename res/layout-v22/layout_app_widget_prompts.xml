@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:theme="@style/AppTheme.AppWidgetContainer" android:id="@android:id/background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:backgroundTint="#fffef2f2" style="@style/Widget.Gratitude.AppWidget.Container"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <RelativeLayout android:paddingLeft="12.0dip" android:paddingTop="16.0dip" android:paddingRight="12.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="12.0dip" android:paddingVertical="16.0dip">
+        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="#ff847374" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_widget_prompts_title" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff201a1b" android:ellipsize="end" android:id="@id/tv_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/app_widget_prompts_sample" android:maxLines="3" android:layout_below="@id/tv_title" />
+        <ImageView android:id="@id/btn_shuffle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/ic_widget_prompt_shuffle" android:layout_below="@id/tv_prompt" />
+        <ImageView android:id="@id/btn_write" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_widget_prompt_write" android:layout_alignTop="@id/btn_shuffle" android:layout_marginStart="24.0dip" android:layout_toEndOf="@id/btn_shuffle" />
+    </RelativeLayout>
+</FrameLayout>

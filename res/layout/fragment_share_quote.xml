@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/sendNoteContainer" android:background="@drawable/shape_dailyzen_share_quote" android:layout_width="372.0dip" android:layout_height="372.0dip" android:layout_marginTop="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_16dp">
+        <ImageView android:id="@id/sendQuoteIv" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/dimen_quote_text" android:textColor="@android:color/black" android:gravity="center" android:id="@id/sendNoteMainText" android:paddingLeft="48.0dip" android:paddingRight="48.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:lineSpacingMultiplier="1.4" android:fontFamily="@font/merriweather" />
+    </RelativeLayout>
+    <include layout="@layout/p_layout_share_via" />
+</LinearLayout>

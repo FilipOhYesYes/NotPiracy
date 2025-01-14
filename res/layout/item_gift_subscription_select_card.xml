@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:checkable="true" app:cardCornerRadius="12.0dip" app:checkedIcon="@drawable/ic_m3_check_circle" app:checkedIconGravity="BOTTOM_END" app:checkedIconSize="24.0dip" app:checkedIconTint="?colorPrimary" app:strokeColor="?colorOutlineVariant"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_card" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="156:110" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

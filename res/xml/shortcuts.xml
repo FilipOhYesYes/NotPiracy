@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/ic_shortcut_new_entry" android:enabled="true">
+        <intent android:targetPackage="com.northstar.gratitude" android:action="ACTION_START_NEW_ENTRY" android:targetClass="com.northstar.gratitude.journalNew.presentation.entry.AddEntryActivity" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_shortcut_new_affn" android:enabled="true">
+        <intent android:targetPackage="com.northstar.gratitude" android:action="OPEN_AFFN" android:targetClass="com.northstar.gratitude.home.MainNewActivity" />
+        <intent android:targetPackage="com.northstar.gratitude" android:action="ACTION_START_NEW_AFFN" android:targetClass="com.northstar.gratitude.affirmations.presentation.add.AddAffirmationActivity" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_shortcut_dz" android:enabled="true">
+        <intent android:targetPackage="com.northstar.gratitude" android:action="OPEN_DAILYZEN" android:targetClass="com.northstar.gratitude.home.MainNewActivity" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_m3_rounded_comment_feedback_24" android:enabled="true">
+        <intent android:targetPackage="com.northstar.gratitude" android:action="ACTION_START_CONTACT_US" android:targetClass="com.northstar.gratitude.home.MainNewActivity" />
+    </shortcut>
+</shortcuts>

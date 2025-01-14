@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@id/group_general">
+        <item android:icon="@drawable/ic_m3_widgets" android:id="@id/action_add_as_widget" android:title="@string/vb_menu_more_option_add_as_widget" app:iconTint="?colorOnSurfaceVariant" />
+        <item android:icon="@drawable/ic_m3_download" android:id="@id/action_download_as_polaroids" android:title="@string/vb_menu_more_option_download_as_polaroids" app:iconTint="?colorOnSurfaceVariant" />
+        <item android:icon="@drawable/ic_m3_share" android:id="@id/action_share_with_friend" android:title="@string/vb_menu_more_option_share_with_friend" app:iconTint="?colorOnSurfaceVariant" />
+    </group>
+    <group android:id="@id/group_guide">
+        <item android:icon="@drawable/ic_m3_rounded_menu_book_24" android:id="@id/action_vb_guide" android:title="@string/vb_menu_more_option_vb_guide" app:iconTint="?colorOnSurfaceVariant" />
+    </group>
+    <group android:id="@id/group_modify">
+        <item android:icon="@drawable/ic_m3_edit" android:id="@id/action_edit_name" android:title="@string/vb_menu_more_option_edit_name" app:iconTint="?colorOnSurfaceVariant" />
+        <item android:icon="@drawable/ic_m3_delete" android:id="@id/action_delete" android:title="@string/vb_menu_more_option_delete_vision_board" app:iconTint="?colorError" />
+    </group>
+</menu>

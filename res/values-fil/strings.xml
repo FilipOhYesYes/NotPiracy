@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="passcode_activate_body_confirm">Kumpirmahin ang passcode</string>
+    <string name="passcode_activate_body_create">Ipasok ang iyong passcode</string>
+    <string name="passcode_change_body_current">Ipasok ang iyong kasalukuyang passcode</string>
+    <string name="passcode_deactivate_btn_title">Huwag paganahin ang Passcode</string>
+    <string name="passcode_unlock_btn_forgot">Nakalimutan ang Passcode?</string>
+    <string name="pin_code_step_create">Lumikha ng passcode</string>
+</resources>

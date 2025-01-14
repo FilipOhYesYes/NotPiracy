@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/action_current_streak" android:title="@string/customize_widget_streak_type_current_streak" />
+    <item android:id="@id/action_best_streak" android:title="@string/customize_widget_streak_type_best_streak" />
+    <item android:id="@id/action_total_entries" android:title="@string/customize_widget_streak_type_total_entries" />
+    <item android:id="@id/action_total_days" android:title="@string/customize_widget_streak_type_total_days" />
+</menu>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_gift_subscription" app:startDestination="@id/giftSubscriptionPurchaseFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="GiftSubscriptionPurchaseFragment" android:name="com.northstar.gratitude.giftSubscriptionV2.presentation.purchase.GiftSubscriptionPurchaseFragment" android:id="@id/giftSubscriptionPurchaseFragment">
+        <action android:id="@id/action_giftSubscriptionPurchaseFragment_to_giftSubscriptionHistoryFragment" app:destination="@id/giftSubscriptionHistoryFragment" />
+        <argument android:name="giftSubscriptionCard" android:defaultValue="@null" app:argType="com.northstar.gratitude.giftSubscriptionV2.data.db.model.GiftSubscriptionCard" app:nullable="true" />
+        <argument android:name="message" android:defaultValue="" app:argType="string" />
+    </fragment>
+    <fragment android:label="GiftSubscriptionHistoryFragment" android:name="com.northstar.gratitude.giftSubscriptionV2.presentation.purchase.GiftSubscriptionHistoryFragment" android:id="@id/giftSubscriptionHistoryFragment">
+        <action android:id="@id/action_giftSubscriptionHistoryFragment_to_giftSubscriptionViewGiftFragment" app:destination="@id/giftSubscriptionViewGiftFragment" />
+    </fragment>
+    <fragment android:label="GiftSubscriptionViewGiftFragment" android:name="com.northstar.gratitude.giftSubscriptionV2.presentation.purchase.GiftSubscriptionViewGiftFragment" android:id="@id/giftSubscriptionViewGiftFragment">
+        <argument android:name="purchasedGift" app:argType="com.northstar.gratitude.giftSubscriptionV2.data.db.model.PurchasedGift" />
+    </fragment>
+</navigation>

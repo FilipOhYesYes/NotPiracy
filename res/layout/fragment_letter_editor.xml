@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/entryEditTextLayout" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="@dimen/dimen_18sp" android:textColor="@android:color/black" android:textColorHint="@color/text_color_onboarding" android:id="@id/letterToEditText" android:background="@null" android:paddingBottom="@dimen/dimen_8dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/lettereditor_letter_cm_subtitle" android:inputType="textCapSentences|textMultiLine" android:textCursorDrawable="@drawable/shape_edittext_cursor" android:fontFamily="@font/lato_bold" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/letterToEditText">
+            <EditText android:textSize="16.0sp" android:textColor="@android:color/black" android:textColorHint="@color/text_color_onboarding" android:gravity="start|center|top" android:id="@id/entryEditText" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:lineSpacingMultiplier="1.2" android:inputType="textCapSentences|textMultiLine" android:textCursorDrawable="@drawable/shape_edittext_cursor" android:fontFamily="@font/merriweather" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

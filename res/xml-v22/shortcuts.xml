@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/ic_shortcut_new_entry" android:enabled="true" android:shortcutId="write_entry" android:shortcutShortLabel="@string/shortcut_write_entry_short_label" android:shortcutLongLabel="@string/shortcut_write_entry_long_label">
+        <intent android:targetPackage="com.northstar.gratitude" android:action="ACTION_START_NEW_ENTRY" android:targetClass="com.northstar.gratitude.journalNew.presentation.entry.AddEntryActivity" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_shortcut_new_affn" android:enabled="true" android:shortcutId="new_affirmation" android:shortcutShortLabel="@string/shortcut_new_affn_short_label" android:shortcutLongLabel="@string/shortcut_new_affn_long_label">
+        <intent android:targetPackage="com.northstar.gratitude" android:action="OPEN_AFFN" android:targetClass="com.northstar.gratitude.home.MainNewActivity" />
+        <intent android:targetPackage="com.northstar.gratitude" android:action="ACTION_START_NEW_AFFN" android:targetClass="com.northstar.gratitude.affirmations.presentation.add.AddAffirmationActivity" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_shortcut_dz" android:enabled="true" android:shortcutId="daily_zen" android:shortcutShortLabel="@string/shortcut_dz_short_label" android:shortcutLongLabel="@string/shortcut_dz_long_label">
+        <intent android:targetPackage="com.northstar.gratitude" android:action="OPEN_DAILYZEN" android:targetClass="com.northstar.gratitude.home.MainNewActivity" />
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_m3_rounded_comment_feedback_24" android:enabled="true" android:shortcutId="contact_us" android:shortcutShortLabel="@string/shortcut_contact_short_label" android:shortcutLongLabel="@string/shortcut_contact_long_label">
+        <intent android:targetPackage="com.northstar.gratitude" android:action="ACTION_START_CONTACT_US" android:targetClass="com.northstar.gratitude.home.MainNewActivity" />
+    </shortcut>
+</shortcuts>

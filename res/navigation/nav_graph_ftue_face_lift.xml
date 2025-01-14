@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_ftue_face_lift" app:startDestination="@id/ftue3FragmentOneV3"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="fragment_ftue_3_face_lift_screen_1" android:name="com.northstar.gratitude.ftue.ftue3FaceLift.presentation.Ftue3FaceLiftFragmentOne" android:id="@id/ftue3FragmentOne">
+        <action android:id="@id/action_ftue3FragmentOne_to_ftue3FragmentTwo2" app:destination="@id/ftue3FragmentTwo" />
+    </fragment>
+    <fragment android:label="fragment_ftue_3_face_lift_screen_1_v3" android:name="com.northstar.gratitude.ftue.ftue3FaceLift.presentation.Ftue3FaceLiftFragmentOneV3" android:id="@id/ftue3FragmentOneV3">
+        <action android:id="@id/action_ftue3FragmentOneV3_to_ftue3FragmentTwo" app:destination="@id/ftue3FragmentTwo" />
+    </fragment>
+    <fragment android:label="fragment_ftue_3_face_lift_screen_2" android:name="com.northstar.gratitude.ftue.ftue3FaceLift.presentation.Ftue3FaceLiftFragmentTwo" android:id="@id/ftue3FragmentTwo">
+        <action android:id="@id/action_ftue3FragmentTwo_to_ftue3FragmentThree2" app:destination="@id/ftue3FragmentThree" />
+    </fragment>
+    <fragment android:label="fragment_ftue_3_face_lift_screen_3" android:name="com.northstar.gratitude.ftue.ftue3FaceLift.presentation.Ftue3FaceLiftFragmentThree" android:id="@id/ftue3FragmentThree">
+        <action android:id="@id/action_ftue3FragmentThree_to_ftue3FragmentFour2" app:destination="@id/ftue3FragmentFour" />
+    </fragment>
+    <fragment android:label="fragment_ftue_3_face_lift_screen_4" android:name="com.northstar.gratitude.ftue.ftue3FaceLift.presentation.Ftue3FaceLiftFragmentFour" android:id="@id/ftue3FragmentFour">
+        <action android:id="@id/action_ftue3FragmentFour_to_ftue3RestoreFragment2" app:destination="@id/ftue3RestoreFragment" />
+        <action android:id="@id/action_ftue3FragmentFour_to_ftue3FragmentSix" app:destination="@id/ftue3FragmentSix" />
+    </fragment>
+    <fragment android:label="fragment_ftue_3_face_lift_screen_5" android:name="com.northstar.gratitude.ftue.ftue3FaceLift.presentation.Ftue3FaceLiftFragmentFive" android:id="@id/ftue3FragmentFive">
+        <action android:id="@id/action_ftue3FragmentFive_to_ftue3RemindersFragment" app:destination="@id/ftue3RemindersFragment" />
+    </fragment>
+    <fragment android:label="ftue3FragmentSix" android:name="com.northstar.gratitude.ftue.ftue3FaceLift.presentation.Ftue3FaceLiftFragmentSix" android:id="@id/ftue3FragmentSix">
+        <action android:id="@id/action_ftue3FragmentSix_to_ftue3FragmentSeven2" app:destination="@id/ftue3FragmentSeven" />
+    </fragment>
+    <fragment android:label="Ftue3FragmentSeven" android:name="com.northstar.gratitude.ftue.ftue3FaceLift.presentation.Ftue3FaceLiftFragmentSeven" android:id="@id/ftue3FragmentSeven">
+        <action android:id="@id/action_ftue3FragmentSeven_to_ftue3FragmentFive" app:destination="@id/ftue3FragmentFive" />
+        <action android:id="@id/action_ftue3FragmentSeven_to_ftue3RemindersFragment2" app:destination="@id/ftue3RemindersFragment" />
+    </fragment>
+    <fragment android:label="fragment_ftue_3_face_lift_reminders" android:name="com.northstar.gratitude.ftue.ftue3FaceLift.presentation.Ftue3FaceLiftRemindersFragment" android:id="@id/ftue3RemindersFragment">
+        <action android:id="@id/action_ftue3RemindersFragment_to_ftue3BenefitsFragment2" app:destination="@id/ftue3BenefitsFragment" />
+    </fragment>
+    <fragment android:label="fragment_ftue_3_face_lift_benefits" android:name="com.northstar.gratitude.ftue.ftue3FaceLift.presentation.Ftue3FaceLiftBenefitsFragment" android:id="@id/ftue3BenefitsFragment" />
+    <fragment android:label="fragment_ftue_3_face_lift_restore" android:name="com.northstar.gratitude.ftue.ftue3FaceLift.presentation.Ftue3FaceLiftRestoreFragment" android:id="@id/ftue3RestoreFragment">
+        <action android:id="@id/action_ftue3RestoreFragment_to_ftue3FragmentSix2" app:destination="@id/ftue3FragmentSix" />
+        <action android:id="@id/action_ftue3RestoreFragment_to_ftue3DataRestoringFragment2" app:destination="@id/ftue3DataRestoringFragment" />
+    </fragment>
+    <fragment android:label="fragment_ftue_3_face_lift_data_restoring" android:name="com.northstar.gratitude.ftue.ftue3FaceLift.presentation.Ftue3FaceLiftDataRestoringFragment" android:id="@id/ftue3DataRestoringFragment">
+        <action android:id="@id/action_ftue3DataRestoringFragment_to_ftue3FragmentSix2" app:destination="@id/ftue3FragmentSix" />
+    </fragment>
+</navigation>

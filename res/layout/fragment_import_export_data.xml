@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layout_back" layout="@layout/button_back" />
+    <TextView android:textSize="20.0sp" android:textColor="?heading_color" android:id="@id/tv_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:text="@string/import_export_toolbar_title" android:fontFamily="@font/inter_semibold" android:letterSpacing="0.02" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/layout_back" />
+    <View android:id="@id/divider_1" android:background="?grey_300_1000" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="24.0dip" app:layout_constraintTop_toBottomOf="@id/tv_title" />
+    <com.google.android.material.tabs.TabLayout android:id="@id/tab_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/divider_1" app:tabBackground="?whiteColor" app:tabIndicatorColor="@color/pink_accent_color" app:tabMode="fixed" app:tabSelectedTextColor="@color/pink_accent_color" app:tabTextColor="?grey_500_800" style="@style/ImportExportTabStyle">
+        <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/import_export_tab_import" />
+        <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/import_export_tab_export" />
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.fragment.app.FragmentContainerView android:id="@id/fragment_container_tabs" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tab_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_m3_rounded_import_contacts_24" android:id="@id/navDiary" android:title="@string/home_journal_tab_title" />
+    <item android:icon="@drawable/ic_m3_favorite" android:id="@id/navAffirmations" android:title="@string/home_affirmations_tab_title" />
+    <item android:icon="@drawable/ic_m3_brightness_1" android:id="@id/navDailyZen" android:title="@string/home_dailyzen_tab_title" />
+    <item android:icon="@drawable/ic_m3_check_box_outline_blank" android:id="@id/navVisionBoard" android:title="@string/home_vision_board_title" />
+</menu>

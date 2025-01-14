@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/shape_day_streaks_calendar_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/layout_entry_with_image" android:visibility="gone" android:layout="@layout/day_streaks_calendar_entry_with_image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/layout_entry_without_image" android:visibility="gone" android:layout="@layout/day_streaks_calendar_entry_without_image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/layout_no_entry" android:visibility="gone" android:layout="@layout/day_streaks_calendar_no_entry" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/layout_entry_disabled" android:visibility="gone" android:layout="@layout/day_streaks_calendar_disabled" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:installLocation="preferExternal" package="com.northstar.gratitude" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="image/png"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <data android:mimeType="image/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <permission android:name="com.northstar.gratitude.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.northstar.gratitude.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <permission android:name="com.northstar.gratitude.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.northstar.gratitude.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.northstar.gratitude.GratitudeApplication" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppThemeMaterial3Light">
+        <activity android:exported="false" android:name="com.northstar.gratitude.journalNew.presentation.focusArea.FocusAreaNudgeActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.journalNew.presentation.focusArea.JournalFocusAreaActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.wrapped.presentation.share.WrappedShareActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.weekly_review.presentation.share.WeeklyReviewShareActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.weekly_review.presentation.WeeklyReviewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.journalNew.presentation.zero_case.ZeroJournalScreenActivity" android:parentActivityName="com.northstar.gratitude.home.MainNewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.visionBoard.presentation.polaroids.DownloadVisionBoardAsPolaroidsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.visionBoard.presentation.widget.AddVisionBoardWidgetActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.visionBoard.presentation.share.ShareVisionBoardActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.visionBoard.presentation.guide.VisionBoardGuideActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.wrapped.presentation.trigger.WrappedPlayTriggerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.giftSubscriptionV2.presentation.purchase.ThanksgivingPurchaseGiftActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.giftSubscriptionV2.presentation.purchase.GiftSubscriptionActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.pro.offers.thanksgiving2023.ThanksGiving2023OfferActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.pro.offers.diwali2023.Diwali2023OfferActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.widgets.vb.VBAppWidgetConfigureActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.northstar.gratitude.widgets.intro.WidgetsIntroActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.widgets.manage.ManageWidgetsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.widgets.streak.SingleStreakAppWidgetConfigureActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="false" android:name="com.northstar.gratitude.widgets.util.AppWidgetPinnedReceiver"/>
+        <receiver android:exported="false" android:label="@string/app_widget_single_streak_title" android:name="com.northstar.gratitude.widgets.streak.SingleStreakAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/single_streak_app_widget_info"/>
+        </receiver>
+        <receiver android:exported="false" android:label="@string/app_widget_vb_title" android:name="com.northstar.gratitude.widgets.vb.VisionBoardAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/vision_board_app_widget_info"/>
+        </receiver>
+        <receiver android:exported="false" android:label="@string/app_widget_multi_streak_title" android:name="com.northstar.gratitude.widgets.multistreak.MultiStreakAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/multi_streak_app_widget_info"/>
+        </receiver>
+        <receiver android:exported="false" android:label="@string/app_widget_dz_widget_title" android:name="com.northstar.gratitude.widgets.dailyzen.DailyZenAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/daily_zen_app_widget_info"/>
+        </receiver>
+        <receiver android:exported="false" android:label="@string/app_widget_affn_widget_title" android:name="com.northstar.gratitude.widgets.affirmations.AffirmationsWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_widget_affirmations"/>
+        </receiver>
+        <receiver android:exported="false" android:label="@string/app_widget_prompts_widget_title" android:name="com.northstar.gratitude.widgets.prompts.PromptsWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/app_widget_prompts"/>
+        </receiver>
+        <activity android:exported="false" android:name="com.northstar.gratitude.challenge_new.presentation.challenge.LandedChallengeRecommendActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.memories.presentation.share.ShareMemoryActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.memories.presentation.favorites.ViewFavoriteMemoriesActivity" android:parentActivityName="com.northstar.gratitude.streaks.presentation.StreaksCalendarActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.memories.presentation.view.ViewMemoriesActivity" android:parentActivityName="com.northstar.gratitude.streaks.presentation.StreaksCalendarActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.visionBoard.presentation.media.ViewVBMediaActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.challenge_new.presentation.list.LandedChallengeListActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.razorpay.presentation.RazorPayRestoreSubscriptionActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.local_backup.presentation.ImportExportDataActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.backup.presentation.restore.FtueRestoreDataActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.backup.presentation.backup.GoogleDriveBackupTriggerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.backup.presentation.backup.GoogleDriveBackupRestoreActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.challenge_new.presentation.day.LandedChallengeInviteActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.visionBoard.presentation.movie.PlayVisionBoardMovieActivity" android:parentActivityName="com.northstar.gratitude.home.MainNewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.challenge_new.presentation.day.LandedChallengeDayCompleteActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.challenge_new.presentation.challenge.LandedChallengeActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.wrapped.presentation.WrappedActivity" android:parentActivityName="com.northstar.gratitude.home.MainNewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.reminder.presentation.ReminderNewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.reminder.troubleshoot.ReminderTroubleshootActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.journalNew.presentation.search.ViewSingleJournalEntryActivity" android:parentActivityName="com.northstar.gratitude.home.MainNewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.journalNew.presentation.search.JournalEntriesSearchActivity" android:parentActivityName="com.northstar.gratitude.home.MainNewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.journalNew.presentation.view.ViewEntryActivity" android:parentActivityName="com.northstar.gratitude.home.MainNewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.journalNew.presentation.preview.JournalEntryPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.northstar.gratitude.journalNew.presentation.entry.AddEntryActivity" android:parentActivityName="com.northstar.gratitude.home.MainNewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.northstar.gratitude.ftue.ftue3FaceLift.presentation.FtueActivity3FaceLift" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.delete.presentation.DeleteDataActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.challenge_new.presentation.eleven_days.LandedChallenge11DaysCompletedDayActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.challenge_new.presentation.eleven_days.ChallengeLetterWritingTipsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.challenge_new.presentation.eleven_days.LandedChallenge11DaysActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.streaks.presentation.StreaksCalendarActivity" android:parentActivityName="com.northstar.gratitude.home.MainNewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.streaks.presentation.streakProgress.StreakProgressActivity" android:parentActivityName="com.northstar.gratitude.home.MainNewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.streaks.presentation.whatsAStreak.WhatsAStreakGuideActivity" android:parentActivityName="com.northstar.gratitude.home.MainNewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.streaks.presentation.milestone.MilestoneActivity" android:parentActivityName="com.northstar.gratitude.home.MainNewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.streaks.presentation.commitToSteakGoal.CommitToStreakGoalActivity" android:parentActivityName="com.northstar.gratitude.home.MainNewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.northstar.gratitude.streak_share.presentation.StreaksShareActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.pro.afterUpgrade.presentation.success.ProPurchaseSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.affirmations.presentation.artist.SelectAffirmationArtistActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.image_picker.journal.JournalImagePickerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.affirmations.presentation.music.AffirmationsMusicActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale" android:launchMode="singleTop" android:name="com.northstar.gratitude.affirmations.presentation.add.AddAffirmationActivity" android:parentActivityName="com.northstar.gratitude.home.MainNewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".home.MainNewActivity"/>
+        </activity>
+        <activity android:name="com.northstar.gratitude.affirmations.presentation.view.ViewUserAffirmationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.affirmations.presentation.view.ViewDiscoverAffirmationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.affirmations.presentation.home.CreateNewAffnFolderActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.northstar.gratitude.affirmations.presentation.play.PlayDiscoverAffirmationsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.affirmations.presentation.play.PlayUserAffirmationsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.affirmations.presentation.list.DiscoverAffnListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.affirmations.presentation.list.UserAffnListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.pro.afterUpgrade.presentation.cancel.CancelSubscriptionSurveyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:name="com.northstar.gratitude.pro.afterUpgrade.presentation.manage.ManageSubscriptionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.backup.presentation.backup_and_export.LocalExportDataActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.newsletter.presentation.NewsletterSubscribeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.settings.presentation.SettingsActivity" android:parentActivityName="com.northstar.gratitude.home.MainNewActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".home.MainNewActivity"/>
+        </activity>
+        <activity android:name="com.northstar.gratitude.journalNew.presentation.preferences.JournalPreferenceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.journalBin.presentation.JournalBinActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.journalBin.presentation.ViewBinEntryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.backup.presentation.restore_and_import.RestoreAndImportActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.giftSubscription.presentation.PurchaseGiftSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.giftSubscription.presentation.PurchaseGiftActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.pro.afterUpgrade.presentation.manage.GiftRedeemedProActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.razorpay.presentation.RazorPayProActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.ftueNew.presentation.FtueActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.northstar.visionBoard.presentation.reels.ReelMusicActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.visionBoard.presentation.common.EditEntityActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:name="com.northstar.visionBoard.presentation.reels.PlayReelActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.visionBoard.presentation.section.ViewSectionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.northstar.visionBoard.presentation.section.AddSectionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:name="com.northstar.visionBoard.presentation.vb.AddVisionBoardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:name="com.northstar.gratitude.help.HelpActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.pexels.presentation.PexelsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.dailyzen.NativeVideoPlayer"/>
+        <activity android:name="com.northstar.gratitude.ftue.ftue3.FtueActivity3" android:screenOrientation="portrait"/>
+        <activity android:name="com.northstar.gratitude.challenge.LandedChallengeListActivity"/>
+        <activity android:configChanges="locale" android:name="com.northstar.gratitude.challenge.LandedChallengeCompletedDayActivity" android:parentActivityName="com.northstar.gratitude.challenge.LandedChallengeDayViewActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".challenge.LandedChallengeCompletedDayActivity"/>
+        </activity>
+        <activity android:configChanges="locale" android:name="com.northstar.gratitude.challenge.LandedChallengeDayViewActivity" android:parentActivityName="com.northstar.gratitude.home.MainNewActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".home.MainNewActivity"/>
+        </activity>
+        <activity android:configChanges="locale" android:name="com.northstar.gratitude.challenge.LandedChallengeItemListActivity" android:parentActivityName="com.northstar.gratitude.home.MainNewActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".home.MainNewActivity"/>
+        </activity>
+        <activity android:configChanges="locale" android:name="com.northstar.gratitude.challenge.LandedChallengeItemViewActivity" android:parentActivityName="com.northstar.gratitude.home.MainNewActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".home.MainNewActivity"/>
+        </activity>
+        <activity android:configChanges="locale" android:name="com.northstar.gratitude.challenge.LandedCongratulationsActivity" android:parentActivityName="com.northstar.gratitude.challenge.LandedChallengeActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".challenge.LandedChallengeActivity"/>
+        </activity>
+        <activity android:configChanges="locale" android:name="com.northstar.gratitude.challenge.LandedChallengeActivity" android:parentActivityName="com.northstar.gratitude.home.MainNewActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".home.MainNewActivity"/>
+        </activity>
+        <activity android:configChanges="locale" android:name="com.northstar.gratitude.csvimport.previewSelection.ImportCsvPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale" android:name="com.northstar.gratitude.dailyzen.presentation.bookmark.DailyZenBookmarkListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale" android:name="com.northstar.gratitude.pdf.ExportPDFActivity" android:parentActivityName="com.northstar.gratitude.home.MainNewActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".home.MainNewActivity"/>
+        </activity>
+        <activity android:configChanges="locale" android:name="com.northstar.gratitude.pdf.configure.PDFExportConfigureActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale" android:name="com.northstar.gratitude.activities.FullViewImageListActivity"/>
+        <activity android:configChanges="locale" android:exported="true" android:launchMode="singleTop" android:name="com.northstar.gratitude.pro.ProActivity" android:parentActivityName="com.northstar.gratitude.home.MainNewActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".home.MainNewActivity"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.northstar.gratitude.home.MainNewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="locale|orientation" android:exported="true" android:name="com.northstar.gratitude.firstlaunch.SplashActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+        </activity>
+        <activity android:name="com.northstar.gratitude.common.BaseActivity"/>
+        <activity android:configChanges="locale" android:name="com.northstar.gratitude.share.ShareEntityActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale" android:exported="true" android:name="com.northstar.gratitude.passcode.settingsSecurity.SettingsSecurityActivity" android:parentActivityName="com.northstar.gratitude.home.MainNewActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.northstar.gratitude.passcode.settingsSecurity.SettingsSecurityActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".home.MainNewActivity"/>
+        </activity>
+        <activity android:configChanges="locale" android:name="com.northstar.gratitude.passcode.PasscodeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale" android:name="com.northstar.gratitude.csvimport.importCSV.ImportCsvActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale" android:name="com.northstar.gratitude.csvimport.headerSelection.HeaderSelectionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="locale" android:name="com.northstar.gratitude.passcode.recoverEmail.SetRecoveryEmailActivity" android:parentActivityName="com.northstar.gratitude.passcode.settingsSecurity.SettingsSecurityActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".passcode.settingsSecurity.SettingsSecurityActivity"/>
+        </activity>
+        <activity android:configChanges="locale" android:name="com.northstar.gratitude.passcode.forgotPasscode.ForgotPasscodeActivity" android:parentActivityName="com.northstar.gratitude.passcode.PasscodeActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".passcode.PasscodeActivity"/>
+        </activity>
+        <activity android:configChanges="locale" android:exported="true" android:launchMode="singleTask" android:name="com.northstar.gratitude.common.BaseDeepLinkActivity" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="vv7vw.app.goo.gl" android:scheme="http"/>
+                <data android:host="vv7vw.app.goo.gl" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale" android:exported="true" android:launchMode="singleTask" android:name="com.northstar.gratitude.deeplink.DeepLinkActivity" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.gratefulness.me" android:scheme="https"/>
+                <data android:host="gratefulness.me" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.northstar.gratitude.calendarEntry.CalendarEntryViewActivity"/>
+        <meta-data android:name="google_analytics_adid_collection_enabled" android:value="false"/>
+        <meta-data android:name="google_analytics_ssaid_collection_enabled" android:value="false"/>
+        <meta-data android:name="google_analytics_default_allow_ad_personalization_signals" android:value="false"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_stat_name_two"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/colorAccent"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="default"/>
+        <meta-data android:name="com.onesignal.NotificationOpened.DEFAULT" android:value="DISABLE"/>
+        <meta-data android:name="com.onesignal.suppressLaunchURLs" android:value="true"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+        <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled" android:value="true"/>
+        <meta-data android:name="com.facebook.sdk.AutoInitEnabled" android:value="true"/>
+        <meta-data android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled" android:value="false"/>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+        <meta-data android:name="firebase_analytics_collection_deactivated" android:value="false"/>
+        <meta-data android:name="firebase_analytics_collection_enabled" android:value="true"/>
+        <provider android:authorities="@string/content_provider" android:exported="false" android:grantUriPermissions="true" android:name="com.northstar.gratitude.GratitudeFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <provider android:authorities="com.northstar.gratitude.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <receiver android:enabled="true" android:exported="false" android:name="com.northstar.gratitude.receivers.AlarmReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.northstar.gratitude.receivers.JournalNotificationsReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.northstar.gratitude.receivers.NotificationResetReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.northstar.gratitude.receivers.AlarmPermissionReceiver">
+            <intent-filter>
+                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="false" android:exported="false" android:name="com.google.android.gms.metadata.ModuleDependencies">
+            <intent-filter>
+                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES"/>
+            </intent-filter>
+            <meta-data android:name="photopicker_activity:0:required" android:value=""/>
+        </service>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:foregroundServiceType="dataSync" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.esafirm.imagepicker.features.ImagePickerActivity" android:theme="@style/ef_AppTheme"/>
+        <provider android:authorities="com.northstar.gratitude.imagepicker.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.esafirm.imagepicker.helper.ImagePickerFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/ef_image_picker_provider_paths"/>
+        </provider>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.com.northstar.gratitude" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="true" android:name="com.onesignal.notifications.receivers.FCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="999">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.northstar.gratitude"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.onesignal.notifications.services.HmsMessageServiceOneSignal">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="true" android:name="com.onesignal.notifications.activities.NotificationOpenedActivityHMS" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="true" android:name="com.onesignal.notifications.receivers.NotificationDismissReceiver"/>
+        <receiver android:exported="true" android:name="com.onesignal.notifications.receivers.BootUpReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.onesignal.notifications.receivers.UpgradeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.onesignal.notifications.activities.NotificationOpenedActivity" android:noHistory="true" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.onesignal.notifications.activities.NotificationOpenedActivityAndroid22AndOlder" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="false" android:name="com.onesignal.core.services.SyncJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.onesignal.core.activities.PermissionsActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.ktx.FirebasePerfLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseConfigLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.ktx.FirebaseDynamicLinksLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.FirebaseDynamicLinksKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.revenuecat.purchases.amazon.purchasing.ProxyAmazonBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="7.1.1"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivityV2" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.GenericIdpActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="genericidp"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.RecaptchaActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="recaptcha"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <provider android:authorities="com.northstar.gratitude.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <provider android:authorities="com.northstar.gratitude.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="androidx.core.widget.RemoteViewsCompatService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+    </application>
+</manifest>

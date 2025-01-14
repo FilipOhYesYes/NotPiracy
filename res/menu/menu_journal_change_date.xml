@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/dates">
+        <item android:id="@id/action_today" android:title="Today" />
+        <item android:id="@id/action_yesterday" android:title="Yesterday" />
+        <item android:id="@id/action_day_before" android:title="Day before" />
+    </group>
+    <group android:id="@id/custom">
+        <item android:id="@id/action_pick_any_date" android:title="@string/journal_editor_balloon_change_date_option_any_date" />
+    </group>
+</menu>

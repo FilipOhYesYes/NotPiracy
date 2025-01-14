@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText android:textSize="16.0sp" android:textColor="@android:color/black" android:textColorHint="@color/hint_text_color" android:gravity="start|center|top" android:id="@id/entryEditText" android:background="@null" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="" android:lineSpacingMultiplier="1.2" android:inputType="textCapSentences|textMultiLine" android:textCursorDrawable="@drawable/shape_edittext_cursor" android:fontFamily="@font/merriweather"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

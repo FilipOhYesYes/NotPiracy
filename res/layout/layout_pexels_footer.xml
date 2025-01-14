@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="#ff0d1116" android:layout_width="fill_parent" android:layout_height="84.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_selected_photos" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip" android:layout_marginEnd="20.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/btn_done" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <Button android:id="@id/btn_done" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginEnd="16.0dip" app:backgroundTint="?colorPrimary" app:icon="@drawable/ic_m3_arrow_forward" app:iconSize="24.0dip" app:iconTint="@color/white" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="?materialIconButtonStyle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

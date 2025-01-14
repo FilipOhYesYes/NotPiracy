@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/AppTheme.AppWidgetContainer" android:orientation="horizontal" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:backgroundTint="#ffffd9dd" style="@style/Widget.Gratitude.AppWidget.Container.Streak"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:backgroundTint="#fffff8f6" style="@style/Widget.Gratitude.AppWidget.InnerView">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:minHeight="28.0dip" android:layout_weight="1.0">
+                <ImageView android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/ic_m3_local_fire_department" android:layout_marginStart="10.0dip" app:tint="#ff2c1518" />
+                <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="#ff400012" android:ellipsize="end" android:id="@id/tv_current_streak" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="101" android:maxLines="1" android:layout_weight="1.0" android:textAlignment="textEnd" android:layout_marginEnd="12.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#ff400012" android:ellipsize="end" android:gravity="bottom" android:id="@id/tv_current_streak_text" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip" android:text="Current Streak" android:maxLines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="12.0dip" android:minHeight="28.0dip" android:layout_weight="1.0" android:backgroundTint="#fffff8f6" style="@style/Widget.Gratitude.AppWidget.InnerView">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ImageView android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/ic_m3_rounded_import_contacts_24_widget" android:layout_marginStart="10.0dip" app:tint="#ff2c1518" />
+                <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="#ff400012" android:ellipsize="end" android:id="@id/tv_total_entries" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="469" android:maxLines="1" android:layout_weight="1.0" android:textAlignment="textEnd" android:layout_marginEnd="12.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#ff400012" android:ellipsize="end" android:gravity="bottom" android:id="@id/tv_total_entries_text" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip" android:text="Total Entries" android:maxLines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="12.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:backgroundTint="#fffff8f6" style="@style/Widget.Gratitude.AppWidget.InnerView">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:minHeight="28.0dip" android:layout_weight="1.0">
+                <ImageView android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/ic_m3_award_star" android:layout_marginStart="10.0dip" app:tint="#ff2c1518" />
+                <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="#ff400012" android:ellipsize="end" android:id="@id/tv_best_streak" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="153" android:maxLines="1" android:layout_weight="1.0" android:textAlignment="textEnd" android:layout_marginEnd="12.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#ff400012" android:ellipsize="end" android:gravity="bottom" android:id="@id/tv_best_streak_text" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip" android:text="Best Streak" android:maxLines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="12.0dip" android:minHeight="28.0dip" android:layout_weight="1.0" android:backgroundTint="#fffff8f6" style="@style/Widget.Gratitude.AppWidget.InnerView">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ImageView android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/ic_m3_calendar_month" android:layout_marginStart="10.0dip" app:tint="#ff2c1518" />
+                <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="#ff400012" android:ellipsize="end" android:id="@id/tv_total_days" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="512" android:maxLines="1" android:layout_weight="1.0" android:textAlignment="textEnd" android:layout_marginEnd="12.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#ff400012" android:ellipsize="end" android:gravity="bottom" android:id="@id/tv_total_days_text" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip" android:text="Total Days" android:maxLines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

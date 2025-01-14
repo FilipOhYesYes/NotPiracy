@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/passcode_deactivate_btn_title" android:key="pref_security_passcode_deactivate" />
+    <Preference android:title="@string/passcode_change_btn_title" android:key="pref_security_passcode_change" />
+    <Preference android:title="@string/passcode_recover_btn_change" android:key="pref_security_recovery_email" />
+</PreferenceScreen>

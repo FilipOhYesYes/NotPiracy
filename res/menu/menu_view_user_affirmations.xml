@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@id/group_1">
+        <item android:icon="@drawable/ic_m3_edit" android:id="@id/action_edit" android:title="Edit" app:iconTint="@color/white" app:showAsAction="always" />
+        <item android:icon="@drawable/ic_m3_share" android:id="@id/action_share" android:title="Share" app:iconTint="@color/white" app:showAsAction="always" />
+        <item android:icon="@drawable/ic_m3_mic" android:id="@id/action_add_voice" android:title="Add Voice" app:iconTint="?colorOnSurfaceVariant" app:showAsAction="never" />
+        <item android:icon="@drawable/ic_m3_outlined_create_new_folder" android:id="@id/action_add_to_folder" android:title="Add To Folder" app:iconTint="?colorOnSurfaceVariant" app:showAsAction="never" />
+    </group>
+    <group android:id="@id/group_2">
+        <item android:icon="@drawable/ic_m3_delete" android:id="@id/action_delete" android:title="Delete" app:iconTint="?colorError" app:showAsAction="never" />
+    </group>
+</menu>

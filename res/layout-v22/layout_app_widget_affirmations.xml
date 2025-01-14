@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:theme="@style/AppTheme.AppWidgetContainer" android:id="@android:id/background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:backgroundTint="#fffef2f2" style="@style/Widget.Gratitude.AppWidget.Container"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_pro" android:paddingLeft="12.0dip" android:paddingTop="16.0dip" android:paddingRight="12.0dip" android:paddingBottom="16.0dip" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="12.0dip" android:paddingVertical="16.0dip">
+        <TextView android:textSize="20.0sp" android:textColor="#ff201a1b" android:ellipsize="end" android:gravity="bottom|center" android:id="@id/tv_pro_title" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="12.0dip" android:text="Unlock 600+\nPremium Affirmations" android:maxLines="3" android:layout_weight="1.0" app:autoSizeMaxTextSize="20.0sp" app:autoSizeMinTextSize="14.0sp" app:autoSizeStepGranularity="1.0dip" app:autoSizeTextType="uniform" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="20.0dip" android:minHeight="40.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/btn_shuffle_pro" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_widget_affirmations_shuffle" />
+            <ImageView android:id="@id/btn_pro" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_widget_affirmations_unlock" android:layout_marginStart="24.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/layout_affn" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/img_widget_affirmations_bg_placeholder" android:scaleType="centerCrop" />
+        <RelativeLayout android:paddingLeft="12.0dip" android:paddingTop="16.0dip" android:paddingRight="12.0dip" android:paddingBottom="16.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="12.0dip" android:paddingVertical="16.0dip">
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffece0e0" android:gravity="bottom|center" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="12.0dip" android:text="@string/app_widget_affn_title" android:layout_above="@id/tv_prompt" android:layout_alignParentTop="true" />
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/tv_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/app_widget_affn_sample" android:maxLines="3" android:shadowColor="#80000000" android:shadowDx="0.0" android:shadowDy="4.0" android:shadowRadius="4.0" android:layout_centerInParent="true" android:textAlignment="center" app:autoSizeMaxTextSize="20.0sp" app:autoSizeMinTextSize="14.0sp" app:autoSizeStepGranularity="1.0dip" app:autoSizeTextType="uniform" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:minHeight="40.0dip" android:layout_below="@id/tv_prompt" android:layout_alignParentBottom="true">
+                <ImageView android:id="@id/btn_shuffle" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_widget_affirmations_shuffle" />
+                <ImageView android:id="@id/btn_save" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_widget_affirmations_save" android:layout_marginStart="24.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

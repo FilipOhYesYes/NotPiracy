@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/ef_font_medium" android:id="@id/tv_empty_images" android:padding="@dimen/ef_spacing_double" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ef_msg_empty_images" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.progressindicator.CircularProgressIndicator android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" app:indicatorColor="@color/pink_accent_color" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.esafirm.imagepicker.view.SnackBarView android:id="@id/ef_snackbar" android:background="@color/ef_black_alpha_aa" android:layout_width="fill_parent" android:layout_height="@dimen/ef_height_snackbar" android:paddingStart="@dimen/ef_spacing_double" android:paddingEnd="@dimen/ef_spacing_double" app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

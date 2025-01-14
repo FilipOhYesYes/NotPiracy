@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:background="?colorOnSurfaceInverse" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_scrollEffect="compress" app:layout_scrollFlags="scroll|enterAlways|snap" app:navigationIcon="@drawable/m3_arrow_back" app:navigationIconTint="?colorControlNormal" app:titleTextColor="?colorOnSurface" />
+</com.google.android.material.appbar.AppBarLayout>

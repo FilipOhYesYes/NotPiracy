@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/dialogEdittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/dialogMsgText" android:lineSpacingMultiplier="1.2" android:inputType="textEmailAddress" android:fontFamily="@font/lato_bold" style="@style/TextAppearance.AlertDialog.SubTitle" />
+    <androidx.appcompat.widget.AppCompatButton android:id="@id/dialogButtonOne" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/dialogButtonTwo" android:layout_below="@id/dialogEdittext" android:textAllCaps="true" android:layout_toStartOf="@id/dialogButtonTwo" style="@style/TextAppearance.AlertDialog.ButtonOne" />
+    <androidx.appcompat.widget.AppCompatButton android:id="@id/dialogButtonTwo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/dialogEdittext" android:layout_alignParentRight="true" android:textAllCaps="true" android:layout_alignParentEnd="true" style="@style/TextAppearance.AlertDialog.ButtonTwo" />
+</RelativeLayout>

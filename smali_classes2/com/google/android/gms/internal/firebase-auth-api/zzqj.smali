@@ -1,0 +1,193 @@
+.class final Lcom/google/android/gms/internal/firebase-auth-api/zzqj;
+.super Lcom/google/android/gms/internal/firebase-auth-api/zzne;
+.source "com.google.firebase:firebase-auth@@22.3.0"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/android/gms/internal/firebase-auth-api/zzne<",
+        "Lcom/google/android/gms/internal/firebase-auth-api/zzug;",
+        "Lcom/google/android/gms/internal/firebase-auth-api/zzuc;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final synthetic zza:Lcom/google/android/gms/internal/firebase-auth-api/zzqg;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/android/gms/internal/firebase-auth-api/zzqg;Ljava/lang/Class;)V
+    .locals 4
+
+    move-object v0, p0
+
+    iput-object p1, v0, Lcom/google/android/gms/internal/firebase-auth-api/zzqj;->zza:Lcom/google/android/gms/internal/firebase-auth-api/zzqg;
+
+    const-string v3, "Smob - Mod obfuscation tool v4.6 by Kirlif\'"
+
+    invoke-direct {v0, p2}, Lcom/google/android/gms/internal/firebase-auth-api/zzne;-><init>(Ljava/lang/Class;)V
+
+    const/4 v3, 0x4
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic zza(Lcom/google/android/gms/internal/firebase-auth-api/zzahp;)Lcom/google/android/gms/internal/firebase-auth-api/zzakn;
+    .locals 5
+
+    move-object v1, p0
+
+    invoke-static {}, Lcom/google/android/gms/internal/firebase-auth-api/zzaio;->zza()Lcom/google/android/gms/internal/firebase-auth-api/zzaio;
+
+    move-result-object v3
+
+    move-object v0, v3
+
+    invoke-static {p1, v0}, Lcom/google/android/gms/internal/firebase-auth-api/zzug;->zza(Lcom/google/android/gms/internal/firebase-auth-api/zzahp;Lcom/google/android/gms/internal/firebase-auth-api/zzaio;)Lcom/google/android/gms/internal/firebase-auth-api/zzug;
+
+    move-result-object v3
+
+    move-object p1, v3
+
+    return-object p1
+.end method
+
+.method public final synthetic zza(Lcom/google/android/gms/internal/firebase-auth-api/zzakn;)Lcom/google/android/gms/internal/firebase-auth-api/zzakn;
+    .locals 5
+
+    move-object v2, p0
+
+    check-cast p1, Lcom/google/android/gms/internal/firebase-auth-api/zzug;
+
+    const/4 v4, 0x7
+
+    invoke-static {}, Lcom/google/android/gms/internal/firebase-auth-api/zzuc;->zzb()Lcom/google/android/gms/internal/firebase-auth-api/zzuc$zza;
+
+    move-result-object v4
+
+    move-object v0, v4
+
+    invoke-static {}, Lcom/google/android/gms/internal/firebase-auth-api/zzqg;->zza()I
+
+    move-result v4
+
+    move v1, v4
+
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/firebase-auth-api/zzuc$zza;->zza(I)Lcom/google/android/gms/internal/firebase-auth-api/zzuc$zza;
+
+    move-result-object v4
+
+    move-object v0, v4
+
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/firebase-auth-api/zzug;->zzf()Lcom/google/android/gms/internal/firebase-auth-api/zzuh;
+
+    move-result-object v4
+
+    move-object v1, v4
+
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/internal/firebase-auth-api/zzuc$zza;->zza(Lcom/google/android/gms/internal/firebase-auth-api/zzuh;)Lcom/google/android/gms/internal/firebase-auth-api/zzuc$zza;
+
+    move-result-object v4
+
+    move-object v0, v4
+
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/firebase-auth-api/zzug;->zza()I
+
+    move-result v4
+
+    move p1, v4
+
+    invoke-static {p1}, Lcom/google/android/gms/internal/firebase-auth-api/zzou;->zza(I)[B
+
+    move-result-object v4
+
+    move-object p1, v4
+
+    invoke-static {p1}, Lcom/google/android/gms/internal/firebase-auth-api/zzahp;->zza([B)Lcom/google/android/gms/internal/firebase-auth-api/zzahp;
+
+    move-result-object v4
+
+    move-object p1, v4
+
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/firebase-auth-api/zzuc$zza;->zza(Lcom/google/android/gms/internal/firebase-auth-api/zzahp;)Lcom/google/android/gms/internal/firebase-auth-api/zzuc$zza;
+
+    move-result-object v4
+
+    move-object p1, v4
+
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/firebase-auth-api/zzajc$zza;->zzf()Lcom/google/android/gms/internal/firebase-auth-api/zzakn;
+
+    move-result-object v4
+
+    move-object p1, v4
+
+    check-cast p1, Lcom/google/android/gms/internal/firebase-auth-api/zzajc;
+
+    const/4 v4, 0x6
+
+    check-cast p1, Lcom/google/android/gms/internal/firebase-auth-api/zzuc;
+
+    const/4 v4, 0x3
+
+    return-object p1
+.end method
+
+.method public final synthetic zzb(Lcom/google/android/gms/internal/firebase-auth-api/zzakn;)V
+    .locals 5
+
+    move-object v2, p0
+
+    check-cast p1, Lcom/google/android/gms/internal/firebase-auth-api/zzug;
+
+    const/4 v4, 0x3
+
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/firebase-auth-api/zzug;->zza()I
+
+    move-result v4
+
+    move v0, v4
+
+    const/16 v4, 0x10
+
+    move v1, v4
+
+    if-lt v0, v1, :cond_0
+
+    const/4 v4, 0x4
+
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/firebase-auth-api/zzug;->zzf()Lcom/google/android/gms/internal/firebase-auth-api/zzuh;
+
+    move-result-object v4
+
+    move-object p1, v4
+
+    invoke-static {p1}, Lcom/google/android/gms/internal/firebase-auth-api/zzqg;->zza(Lcom/google/android/gms/internal/firebase-auth-api/zzuh;)V
+
+    const/4 v4, 0x3
+
+    return-void
+
+    :cond_0
+    const/4 v4, 0x4
+
+    new-instance p1, Ljava/security/GeneralSecurityException;
+
+    const/4 v4, 0x7
+
+    const-string v4, "key too short"
+
+    move-object v0, v4
+
+    invoke-direct {p1, v0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
+
+    const/4 v4, 0x2
+
+    throw p1
+
+    const/4 v4, 0x7
+.end method

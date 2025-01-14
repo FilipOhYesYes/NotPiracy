@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:background="?colorBackground" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_scrollEffect="compress" app:layout_scrollFlags="scroll|enterAlways" app:menu="@menu/menu_reel_music" app:navigationIcon="@drawable/m3_arrow_back" app:navigationIconTint="?colorOnSurfaceVariant" app:title="@string/visionboard_music_title" app:titleTextColor="?colorOnSurface" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_music" android:paddingBottom="120.0dip" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="16.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.google.android.material.progressindicator.CircularProgressIndicator android:layout_gravity="center" android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+    <com.google.android.material.button.MaterialButton android:layout_gravity="bottom" android:id="@id/btn_done" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="24.0dip" android:text="@string/visionboard_viewsection_btn_title" style="@style/M3PrimaryCtaStyle" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/shape_rect_solid_corners_12dp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:backgroundTint="#fff1ffbb"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="20.0dip" android:paddingTop="24.0dip" android:paddingRight="20.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="22.0sp" android:textColor="#ff84953f" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/vb_guide_screen_2_title" android:fontFamily="@font/libre_baskerville_bold" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/md_theme_light_onSurfaceVariant" android:id="@id/tv_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/vb_guide_screen_2_body" android:lineSpacingExtra="7.0sp" android:fontFamily="@font/libre_baskerville" app:layout_constraintTop_toBottomOf="@id/tv_title" />
+            <ImageView android:id="@id/iv_img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="26.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="26.0dip" android:adjustViewBounds="true" app:layout_constraintTop_toBottomOf="@id/tv_body" app:srcCompat="@drawable/img_vb_guide_2" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/md_theme_light_outline" android:id="@id/tv_courtesy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/vb_guide_screen_2_courtesy" android:fontFamily="@font/inter" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_img" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

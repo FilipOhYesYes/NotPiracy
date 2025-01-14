@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:theme="@style/AppTheme.AppWidgetContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:backgroundTint="#fffef2f2" style="@style/Widget.Gratitude.AppWidget.Container.DZ"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_dz" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_dz" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/img_app_widget_dz_placeholder" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="64.0dip" android:paddingVertical="12.0dip">
+            <ImageView android:id="@id/btn_share" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_widget_dz_share" android:layout_marginStart="12.0dip" />
+            <ImageView android:id="@id/btn_save" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_widget_dz_bookmark" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="20.0sp" android:textColor="#ff201a1b" android:gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="Failed to load :(" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="20.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/btn_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_app_widget_btn_retry" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

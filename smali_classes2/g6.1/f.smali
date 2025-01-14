@@ -1,0 +1,86 @@
+.class public final Lg6/f;
+.super Ljava/lang/Object;
+.source "SafeCollector.common.kt"
+
+# interfaces
+.implements Lre/f;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lre/f<",
+        "Ljava/util/List<",
+        "+",
+        "Lc7/d;",
+        ">;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Lre/f;
+
+
+# direct methods
+.method public constructor <init>(Lre/f;)V
+    .locals 4
+
+    move-object v0, p0
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    const-string v3, "Smob - Mod obfuscation tool v4.6 by Kirlif\'"
+
+    iput-object p1, v0, Lg6/f;->a:Lre/f;
+
+    const/4 v3, 0x4
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final collect(Lre/g;LUd/d;)Ljava/lang/Object;
+    .locals 5
+
+    move-object v1, p0
+
+    new-instance v0, Lg6/f$a;
+
+    const/4 v4, 0x2
+
+    invoke-direct {v0, p1}, Lg6/f$a;-><init>(Lre/g;)V
+
+    const/4 v4, 0x7
+
+    iget-object p1, v1, Lg6/f;->a:Lre/f;
+
+    const/4 v4, 0x1
+
+    invoke-interface {p1, v0, p2}, Lre/f;->collect(Lre/g;LUd/d;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    move-object p1, v3
+
+    sget-object p2, LVd/a;->a:LVd/a;
+
+    const/4 v4, 0x4
+
+    if-ne p1, p2, :cond_0
+
+    const/4 v4, 0x4
+
+    return-object p1
+
+    :cond_0
+    const/4 v3, 0x2
+
+    sget-object p1, LPd/H;->a:LPd/H;
+
+    const/4 v3, 0x2
+
+    return-object p1
+.end method
